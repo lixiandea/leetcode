@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{76CAA384-2EE1-4F63-AF6E-CF4B64BE9F33}</ProjectGuid>
+    <RootNamespace>leetcode</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>D:\Windows Kits\10\Include\10.0.10240.0\ucrt\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="leetcode107.cpp" />
+    <ClCompile Include="leetcode152.cpp" />
+    <ClCompile Include="leetcode349.cpp" />
+    <ClCompile Include="leetcode387.cpp" />
+    <ClCompile Include="leetcode412.cpp" />
+    <ClCompile Include="leetcode429.cpp" />
+    <ClCompile Include="leetcode458.cpp" />
+    <ClCompile Include="leetcode519.cpp" />
+    <ClCompile Include="leetcode566.cpp" />
+    <ClCompile Include="leetcode575.cpp" />
+    <ClCompile Include="leetcode925.cpp" />
+    <ClCompile Include="leetcode933.cpp" />
+    <ClCompile Include="leetcode961.cpp" />
+    <ClCompile Include="leetcode108.cpp" />
+    <ClCompile Include="leetcode118.cpp" />
+    <ClCompile Include="leetcode371.cpp" />
+    <ClCompile Include="leetcode463.cpp" />
+    <ClCompile Include="leetcode494.cpp" />
+    <ClCompile Include="leetcode521.cpp" />
+    <ClCompile Include="leetcode561.cpp" />
+    <ClCompile Include="leetcode669.cpp" />
+    <ClCompile Include="leetcode693.cpp" />
+    <ClCompile Include="leetcode700.cpp" />
+    <ClCompile Include="leetcode806.cpp" />
+    <ClCompile Include="leetcode811.cpp" />
+    <ClCompile Include="leetcode821.cpp" />
+    <ClCompile Include="leetcode908.cpp" />
+    <ClCompile Include="leetcode104.cpp" />
+    <ClCompile Include="leetcode112.cpp" />
+    <ClCompile Include="leetcode136.cpp" />
+    <ClCompile Include="leetcode162.cpp" />
+    <ClCompile Include="leetcode17.cpp" />
+    <ClCompile Include="leetcode171.cpp" />
+    <ClCompile Include="leetcode2.cpp" />
+    <ClCompile Include="leetcode206.cpp" />
+    <ClCompile Include="leetcode226.cpp" />
+    <ClCompile Include="leetcode237.cpp" />
+    <ClCompile Include="leetcode258.cpp" />
+    <ClCompile Include="leetcode344.cpp" />
+    <ClCompile Include="leetcode410.cpp" />
+    <ClCompile Include="leetcode430.cpp" />
+    <ClCompile Include="leetcode461.cpp" />
+    <ClCompile Include="leetcode476.cpp" />
+    <ClCompile Include="leetcode492.cpp" />
+    <ClCompile Include="leetcode500.cpp" />
+    <ClCompile Include="leetcode54.cpp" />
+    <ClCompile Include="leetcode557.cpp" />
+    <ClCompile Include="leetcode559.cpp" />
+    <ClCompile Include="leetcode589.cpp" />
+    <ClCompile Include="leetcode59.cpp" />
+    <ClCompile Include="leetcode590.cpp" />
+    <ClCompile Include="leetcode617.cpp" />
+    <ClCompile Include="leetcode657.cpp" />
+    <ClCompile Include="leetcode709.cpp" />
+    <ClCompile Include="leetcode72.cpp" />
+    <ClCompile Include="leetcode728.cpp" />
+    <ClCompile Include="leetcode769.cpp" />
+    <ClCompile Include="leetcode771.cpp" />
+    <ClCompile Include="leetcode804.cpp" />
+    <ClCompile Include="leetcode832.cpp" />
+    <ClCompile Include="leetcode852.cpp" />
+    <ClCompile Include="leetcode861.cpp" />
+    <ClCompile Include="leetcode867.cpp" />
+    <ClCompile Include="leetcode874.cpp" />
+    <ClCompile Include="leetcode905.cpp" />
+    <ClCompile Include="leetcode922.cpp" />
+    <ClCompile Include="leetcode929.cpp" />
+    <ClCompile Include="leetcode942.cpp" />
+    <ClCompile Include="leetcode944.cpp" />
+    <ClCompile Include="whu1.cpp" />
+    <ClCompile Include="whu2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="afx.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
