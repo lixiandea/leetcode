@@ -1,7 +1,7 @@
-////leetcode 206 反转链表
-///*
-//Definition for singly-linked list.
-//*/
+//////leetcode 206 反转链表
+/////*
+////Definition for singly-linked list.
+//
 //#include"afx.h"
 //struct ListNode {
 //    int val;
@@ -12,13 +12,18 @@
 //class Solution {
 //public:
 //	ListNode* reverseList(ListNode* head) {
-//		
-//	}
-//	void reverse(ListNode * last, ListNode * next)
-//	{
-//		while (next != NULL)
+//		ListNode * res = head;
+//		ListNode * pre = NULL;
+//		ListNode * next = res;
+//		if (res == NULL) return res;
+//		next = res->next;
+//		while (next!=NULL)
 //		{
-//
+//			next = res->next;
+//			res->next = pre;
+//			pre = res;
+//			res = next;
 //		}
+//		return res;
 //	}
 //};

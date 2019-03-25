@@ -117,17 +117,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="leetcode101.cpp" />
     <ClCompile Include="leetcode107.cpp" />
     <ClCompile Include="leetcode152.cpp" />
+    <ClCompile Include="leetcode189.cpp" />
     <ClCompile Include="leetcode349.cpp" />
     <ClCompile Include="leetcode387.cpp" />
+    <ClCompile Include="leetcode401.cpp" />
     <ClCompile Include="leetcode412.cpp" />
+    <ClCompile Include="leetcode427.cpp" />
     <ClCompile Include="leetcode429.cpp" />
     <ClCompile Include="leetcode458.cpp" />
     <ClCompile Include="leetcode496.cpp" />
     <ClCompile Include="leetcode519.cpp" />
+    <ClCompile Include="leetcode538.cpp" />
     <ClCompile Include="leetcode566.cpp" />
     <ClCompile Include="leetcode575.cpp" />
+    <ClCompile Include="leetcode628.cpp" />
+    <ClCompile Include="leetcode687.cpp" />
+    <ClCompile Include="leetcode748.cpp" />
+    <ClCompile Include="leetcode876.cpp" />
+    <ClCompile Include="leetcode893.cpp" />
     <ClCompile Include="leetcode925.cpp" />
     <ClCompile Include="leetcode933.cpp" />
     <ClCompile Include="leetcode961.cpp" />
@@ -187,6 +197,8 @@
     <ClCompile Include="leetcode929.cpp" />
     <ClCompile Include="leetcode942.cpp" />
     <ClCompile Include="leetcode944.cpp" />
+    <ClCompile Include="leetcode977.cpp" />
+    <ClCompile Include="leetcode985.cpp" />
     <ClCompile Include="whu1.cpp" />
     <ClCompile Include="whu2.cpp" />
   </ItemGroup>

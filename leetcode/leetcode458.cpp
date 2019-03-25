@@ -1,4 +1,6 @@
 #include"afx.h"
+//https://blog.csdn.net/lucky52529/article/details/85110278
+//转化为进制问题求解
 class Solution {
 public:
 	int poorPigs(int buckets, int minutesToDie, int minutesToTest) {

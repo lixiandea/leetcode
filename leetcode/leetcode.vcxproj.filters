@@ -231,6 +231,42 @@
     <ClCompile Include="leetcode496.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="leetcode876.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode401.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode893.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode628.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode538.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode748.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode687.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode427.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode977.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode985.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode189.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode101.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="afx.h">
