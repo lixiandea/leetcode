@@ -6,9 +6,9 @@
 //		vector<int> B;
 //		for (int index = 0; index < A.size(); index++)
 //		{
-//			if (A[index] % 2 != 0)
+//			if (A{index] % 2 != 0)
 //			{
-//				B.push_back(A[index]);
+//				B.push_back(A{index]);
 //				A.erase(A.begin() + index);
 //				index--;
 //			}

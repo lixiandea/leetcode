@@ -46,11 +46,11 @@
 //		{
 //			for (int jndex = 0; jndex < arr.size(); jndex++)
 //			{
-//				if (arr[index] > arr[jndex])
+//				if (arr{index] > arr{jndex])
 //				{
-//					int temp = arr[index];
-//					arr[index] = arr[jndex];
-//					arr[jndex] = temp;
+//					int temp = arr{index];
+//					arr{index] = arr{jndex];
+//					arr{jndex] = temp;
 //				}
 //			}
 //		}
@@ -90,7 +90,7 @@
 //		vector<int> result;
 //		for (int index = begin; index <= end; index++)
 //		{
-//			result.push_back(arr[index]);
+//			result.push_back(arr{index]);
 //		}
 //		return result;
 //	}

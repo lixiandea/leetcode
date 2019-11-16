@@ -1,31 +1,46 @@
-//////leetcode 206 ·´×ªÁ´±í
-/////*
-////Definition for singly-linked list.
-//
 //#include"afx.h"
-//struct ListNode {
-//    int val;
-//    ListNode *next;
-//    ListNode(int x) : val(x), next(NULL) {}
-//};
+//
+// //Definition for singly-linked list.
+// struct ListNode {
+//     int val;
+//     ListNode *next;
+//     ListNode(int x) : val(x), next(NULL) {}
+// };
 //
 //class Solution {
 //public:
-//	ListNode* reverseList(ListNode* head) {
-//		if (head == NULL) return NULL;
-//		vector<ListNode *> res;
-//		while (head!=NULL)
+//	ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
+//		if (l1 == NULL || l2 == NULL)
 //		{
-//			res.push_back(head);
-//			head = head->next;
+//			return l1 == NULL ? l2 : l1;
 //		}
-//		int len = res.size();
-//		for (int index = len - 1; index > 0; index--)
+//		ListNode* p1 = l1->val>l2->val?l1:l2;
+//		ListNode* p2 = p1==l1?l2:l1;
+//		while (p1!=NULL&&p2!=NULL)
 //		{
-//			res[index]->next = res[index - 1];
+//			if (p2->val >= p1->val && p2->val<=p1->next->val)
+//			{
+//				ListNode * tmp = p1->next;
+//				p1->next = p2;
+//				p2 = p2->next;
+//				p1->next->next = tmp;
+//				p1 = p1->next;
+//				p2->next = tmp;
+//			}
+//			else
+//			{
+//				if (p1->next == NULL)
+//				{
+//					p1->next = p2;
+//					break;
+//				}
+//				else
+//				{
+//					p1 = p1->next;
+//				}
+//			}
 //		}
-//		res[0]->next = NULL;
-//		return res[len - 1];
+//		return p1;
 //	}
 //};
 //
@@ -88,9 +103,11 @@
 //int main() {
 //	string line;
 //	while (getline(cin, line)) {
-//		ListNode* head = stringToListNode(line);
+//		ListNode* l1 = stringToListNode(line);
+//		getline(cin, line);
+//		ListNode* l2 = stringToListNode(line);
 //
-//		ListNode* ret = Solution().reverseList(head);
+//		ListNode* ret = Solution().mergeTwoLists(l1, l2);
 //
 //		string out = listNodeToString(ret);
 //		cout << out << endl;

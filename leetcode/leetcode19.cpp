@@ -1,33 +1,31 @@
-//////leetcode 206 ·´×ªÁ´±í
-/////*
-////Definition for singly-linked list.
-//
 //#include"afx.h"
-//struct ListNode {
-//    int val;
-//    ListNode *next;
-//    ListNode(int x) : val(x), next(NULL) {}
-//};
+//
+//// Definition for singly-linked list.
+//  struct ListNode {
+//      int val;
+//      ListNode *next;
+//      ListNode(int x) : val(x), next(NULL) {}
+//  };
 //
 //class Solution {
 //public:
-//	ListNode* reverseList(ListNode* head) {
-//		if (head == NULL) return NULL;
-//		vector<ListNode *> res;
-//		while (head!=NULL)
+//	ListNode* removeNthFromEnd(ListNode* head, int n) {
+//		ListNode * node = head;
+//		vector<ListNode *> index;
+//		int len = 0;
+//		while (node!=NULL)
 //		{
-//			res.push_back(head);
-//			head = head->next;
+//			index.push_back(node);
+//			node = node->next;
+//			len++;
 //		}
-//		int len = res.size();
-//		for (int index = len - 1; index > 0; index--)
-//		{
-//			res[index]->next = res[index - 1];
-//		}
-//		res[0]->next = NULL;
-//		return res[len - 1];
+//		if (len - n  == 0 && len == 1) head = NULL;
+//		else if (len - n  == 0) head = index[1];
+//		else index[len - n - 1]->next = index[len - n - 1]->next->next;
+//		return head;
 //	}
 //};
+//
 //
 //void trimLeftTrailingSpaces(string &input) {
 //	input.erase(input.begin(), find_if(input.begin(), input.end(), [](int ch) {
@@ -72,6 +70,10 @@
 //	return ptr;
 //}
 //
+//int stringToInteger(string input) {
+//	return stoi(input);
+//}
+//
 //string listNodeToString(ListNode* node) {
 //	if (node == nullptr) {
 //		return "[]";
@@ -89,8 +91,10 @@
 //	string line;
 //	while (getline(cin, line)) {
 //		ListNode* head = stringToListNode(line);
+//		getline(cin, line);
+//		int n = stringToInteger(line);
 //
-//		ListNode* ret = Solution().reverseList(head);
+//		ListNode* ret = Solution().removeNthFromEnd(head, n);
 //
 //		string out = listNodeToString(ret);
 //		cout << out << endl;

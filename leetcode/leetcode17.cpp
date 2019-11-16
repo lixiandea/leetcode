@@ -10,7 +10,7 @@
 //		{
 //			if (index == 0)
 //			{
-//				for (auto x : transDigitToChar(digits[index]-48))
+//				for (auto x : transDigitToChar(digits{index]-48))
 //				{
 //					string str;
 //					str.push_back(x);
@@ -23,8 +23,8 @@
 //				int length = answer.size();
 //				for (int jndex = 0; jndex < length;jndex++)
 //				{
-//					string curstr = answer[jndex];
-//					for (auto x : transDigitToChar(digits[index] - 48))
+//					string curstr = answer{jndex];
+//					for (auto x : transDigitToChar(digits{index] - 48))
 //					{
 //						string str = curstr;
 //						str.push_back(x);

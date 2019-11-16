@@ -65,7 +65,7 @@
 //		}
 //		for (int index = begin; index <= end; index++)
 //		{
-//			sum += nums[index];
+//			sum += nums{index];
 //		}
 //		return sum;
 //	}

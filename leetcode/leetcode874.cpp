@@ -13,19 +13,19 @@
 //			else
 //			{
 //				pos = move(direction, pos, command, obstacles);
-//				cout << pos[0] << " " << pos[1] << endl;
+//				cout << pos{0] << " " << pos{1] << endl;
 //			}
 //			
 //
 //		}
 //
-//		return pos[0] * pos[0] + pos[1] * pos[1];
+//		return pos{0] * pos{0] + pos{1] * pos{1];
 //	}
 //	bool isObstacle(vector<int> pos, vector<vector<int>> &obstacles)
 //	{
 //		for (auto obstacle : obstacles)
 //		{
-//			if (obstacle[0] == pos[0] && obstacle[1] == pos[1])
+//			if (obstacle{0] == pos{0] && obstacle{1] == pos{1])
 //			{
 //				return true;
 //			}
@@ -61,16 +61,16 @@
 //		switch (direction)
 //		{
 //		case 1:
-//			pos[1] += length;
+//			pos{1] += length;
 //			return pos;
 //		case 2:
-//			pos[0] += length;
+//			pos{0] += length;
 //			return pos;
 //		case 3:
-//			pos[1] -= length;
+//			pos{1] -= length;
 //			return pos;
 //		case 4:
-//			pos[0] -= length;
+//			pos{0] -= length;
 //			return pos;
 //		default:
 //			return pos;

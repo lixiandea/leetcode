@@ -5,7 +5,7 @@
 //	vector<vector<int>> flipAndInvertImage(vector<vector<int>>& A) {
 //		for (int index = 0; index < A.size(); index++)
 //		{
-//			convertVec(A[index]);
+//			convertVec(A{index]);
 //			
 //		}
 //		return A;
@@ -15,7 +15,7 @@
 //	{
 //		for (int index = 0; index < a.size(); index++)
 //		{
-//			a[index] = 1- a[index];
+//			a{index] = 1- a{index];
 //		}
 //		reverse(a.begin() , a.end() );
 //	}
